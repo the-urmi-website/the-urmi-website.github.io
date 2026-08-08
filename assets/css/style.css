@@ -2219,7 +2219,147 @@ footer{
         padding:22px;
     }
 }
+/*=========================================================
+    MOBILE MENU
+=========================================================*/
 
+.menu-toggle{
+    display:none;
+
+    border:none;
+    background:none;
+
+    font-size:30px;
+    line-height:1;
+
+    color:var(--primary);
+
+    cursor:pointer;
+
+    padding:5px;
+}
+
+
+/*=========================================================
+    MOBILE NAVIGATION
+=========================================================*/
+
+@media(max-width:768px){
+
+    header{
+        height:75px;
+    }
+
+    header .container{
+        height:75px;
+    }
+
+    .logo img{
+        height:55px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav{
+        display:none;
+
+        position:absolute;
+
+        top:75px;
+        left:0;
+
+        width:100%;
+
+        background:#ffffff;
+
+        box-shadow:0 15px 30px rgba(0,0,0,.10);
+
+        padding:15px 0;
+    }
+
+    nav.mobile-open{
+        display:block;
+    }
+
+    nav ul{
+        display:flex;
+
+        flex-direction:column;
+
+        gap:0;
+
+        width:100%;
+    }
+
+    nav ul li{
+        width:100%;
+    }
+
+    nav ul li a{
+        display:block;
+
+        width:100%;
+
+        padding:14px 25px;
+
+        font-size:16px;
+    }
+
+    nav ul li a::after{
+        display:none;
+    }
+
+    nav ul li a:hover{
+        background:#faf6ef;
+
+        color:var(--primary);
+    }
+
+    .book-btn{
+        display:none;
+    }
+
+
+    /*-----------------------------------------
+        MOBILE DINING DROPDOWN
+    -----------------------------------------*/
+
+    .dropdown-menu{
+        position:static;
+
+        transform:none;
+
+        width:100%;
+
+        display:none;
+
+        opacity:1;
+        visibility:visible;
+
+        box-shadow:none;
+
+        border-radius:0;
+
+        padding:0 15px;
+
+        background:#faf8f5;
+    }
+
+    .dropdown:hover .dropdown-menu{
+        display:none;
+    }
+
+    .dropdown.mobile-open .dropdown-menu{
+        display:flex;
+    }
+
+    .dropdown-menu .dropdown-column a{
+        padding:14px 15px;
+    }
+
+}
 /*=========================================================
     END OF STYLE.CSS
 =========================================================*/
