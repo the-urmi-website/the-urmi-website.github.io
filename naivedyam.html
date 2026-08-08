@@ -508,6 +508,51 @@ The Urmi, Haridwar.
 
 <script src="assets/js/main.js"></script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("header nav");
+    const dropdown = document.querySelector(".dropdown");
+
+    if (menuToggle && nav) {
+
+        menuToggle.addEventListener("click", function () {
+
+            nav.classList.toggle("mobile-open");
+
+        });
+
+    }
+
+    if (dropdown) {
+
+        const diningLink = dropdown.querySelector(":scope > a");
+
+        if (diningLink) {
+
+            diningLink.addEventListener("click", function (event) {
+
+                if (window.innerWidth <= 768) {
+
+                    event.preventDefault();
+
+                    dropdown.classList.toggle("mobile-open");
+
+                }
+
+            });
+
+        }
+
+    }
+
+});
+</script>
+
+</body>
+</html>
+
 </body>
 
 </html>
