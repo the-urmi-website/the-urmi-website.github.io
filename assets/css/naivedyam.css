@@ -1346,9 +1346,9 @@ nav ul li a.active::after {
         padding:15px 0;
     }
 
-    nav.mobile-open{
-        display:block;
-    }
+header nav.mobile-open{
+    display:block !important;
+}
 
     nav ul{
         display:flex;
