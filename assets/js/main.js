@@ -258,53 +258,6 @@ behavior:"smooth"
 });
 
 
-/*=========================================================
-  SIMPLE IMAGE LIGHTBOX
-=========================================================*/
-
-const images=document.querySelectorAll(".gallery-item img");
-
-const lightbox=document.createElement("div");
-
-lightbox.style.position="fixed";
-lightbox.style.left="0";
-lightbox.style.top="0";
-lightbox.style.width="100%";
-lightbox.style.height="100%";
-lightbox.style.background="rgba(0,0,0,.92)";
-lightbox.style.display="none";
-lightbox.style.alignItems="center";
-lightbox.style.justifyContent="center";
-lightbox.style.zIndex="99999";
-
-const lightboxImage=document.createElement("img");
-
-lightboxImage.style.maxWidth="90%";
-lightboxImage.style.maxHeight="90%";
-lightboxImage.style.borderRadius="10px";
-
-lightbox.appendChild(lightboxImage);
-
-document.body.appendChild(lightbox);
-
-images.forEach(function(image){
-
-image.addEventListener("click",function(){
-
-lightbox.style.display="flex";
-
-lightboxImage.src=this.src;
-
-});
-
-});
-
-lightbox.addEventListener("click",function(){
-
-lightbox.style.display="none";
-
-});
-
 
 /*=========================================================
   CONTACT FORM
@@ -484,35 +437,23 @@ updateDots();
 },5000);
 
 /*=========================================================
-    GALLERY LIGHTBOX
+  GALLERY LIGHTBOX
 =========================================================*/
 
-document.addEventListener("DOMContentLoaded", function () {
+const galleryImages = document.querySelectorAll(".gallery-item img");
 
-    const galleryImages =
-        document.querySelectorAll(".gallery-item img");
-
-    if (!galleryImages.length) return;
-
-
-    /*-----------------------------------------
-        CREATE LIGHTBOX
-    -----------------------------------------*/
+if (galleryImages.length > 0) {
 
     const lightbox = document.createElement("div");
 
     lightbox.className = "gallery-lightbox";
 
     lightbox.innerHTML = `
-        <button class="lightbox-close" aria-label="Close">
-            &times;
-        </button>
-
+        <button class="lightbox-close" aria-label="Close">&times;</button>
         <img class="lightbox-image" src="" alt="Gallery Image">
     `;
 
     document.body.appendChild(lightbox);
-
 
     const lightboxImage =
         lightbox.querySelector(".lightbox-image");
@@ -521,16 +462,13 @@ document.addEventListener("DOMContentLoaded", function () {
         lightbox.querySelector(".lightbox-close");
 
 
-    /*-----------------------------------------
-        OPEN IMAGE
-    -----------------------------------------*/
+    /* OPEN IMAGE */
 
-    galleryImages.forEach(function (image) {
+    galleryImages.forEach(function(image) {
 
-        image.addEventListener("click", function () {
+        image.addEventListener("click", function() {
 
             lightboxImage.src = image.src;
-
             lightboxImage.alt = image.alt;
 
             lightbox.classList.add("active");
@@ -542,11 +480,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /*-----------------------------------------
-        CLOSE BUTTON
-    -----------------------------------------*/
+    /* CLOSE BUTTON */
 
-    closeButton.addEventListener("click", function () {
+    closeButton.addEventListener("click", function() {
 
         lightbox.classList.remove("active");
 
@@ -555,11 +491,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /*-----------------------------------------
-        CLOSE BY CLICKING OUTSIDE IMAGE
-    -----------------------------------------*/
+    /* CLOSE BY CLICKING OUTSIDE IMAGE */
 
-    lightbox.addEventListener("click", function (event) {
+    lightbox.addEventListener("click", function(event) {
 
         if (event.target === lightbox) {
 
@@ -572,11 +506,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /*-----------------------------------------
-        CLOSE WITH ESC KEY
-    -----------------------------------------*/
+    /* ESC KEY */
 
-    document.addEventListener("keydown", function (event) {
+    document.addEventListener("keydown", function(event) {
 
         if (event.key === "Escape") {
 
@@ -588,7 +520,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-});
+}
 
 /*=========================================================
   END
