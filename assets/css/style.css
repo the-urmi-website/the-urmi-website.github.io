@@ -2362,5 +2362,118 @@ header nav.mobile-open{
 
 }
 /*=========================================================
+    GALLERY LIGHTBOX
+=========================================================*/
+
+.gallery-lightbox{
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.88);
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:40px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s ease;
+
+    z-index:99999;
+}
+
+.gallery-lightbox.active{
+    opacity:1;
+
+    visibility:visible;
+}
+
+.lightbox-image{
+    max-width:92vw;
+
+    max-height:88vh;
+
+    width:auto;
+
+    height:auto;
+
+    object-fit:contain;
+
+    border-radius:8px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
+}
+
+.lightbox-close{
+    position:absolute;
+
+    top:22px;
+
+    right:28px;
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    color:#ffffff;
+
+    font-size:34px;
+
+    line-height:1;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.lightbox-close:hover{
+    background:rgba(255,255,255,.28);
+
+    transform:rotate(90deg);
+}
+
+
+/*=========================================================
+    MOBILE LIGHTBOX
+=========================================================*/
+
+@media(max-width:768px){
+
+    .gallery-lightbox{
+        padding:20px;
+    }
+
+    .lightbox-image{
+        max-width:96vw;
+
+        max-height:82vh;
+    }
+
+    .lightbox-close{
+        top:15px;
+
+        right:15px;
+
+        width:44px;
+
+        height:44px;
+
+        font-size:30px;
+    }
+
+}
+/*=========================================================
     END OF STYLE.CSS
 =========================================================*/
