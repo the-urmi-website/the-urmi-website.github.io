@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/fusion-cafe.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+<link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
 
@@ -23,23 +25,35 @@
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a href="index.html#about">About</a></li>
-<li><a href="index.html#rooms">Rooms</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="rooms.html">Rooms</a></li>
 <li class="dropdown">
-<a href="#" class="active">Dining <span class="arrow">▾</span></a>
+<a href="#" class="dropdown-trigger">Dining <span>▾</span></a>
 <div class="dropdown-menu">
-<div class="dropdown-column"><a href="naivedyam.html"><div class="dropdown-icon">🍽</div><h4>Naivedyam</h4><p>Authentic Satvik Dining</p></a></div>
+<div class="dropdown-column">
+<a href="naivedyam.html">
+<div class="dropdown-icon">🍽</div>
+<h4>Naivedyam</h4>
+<p>Authentic Satvik Dining</p>
+</a>
+</div>
 <div class="dropdown-divider"></div>
-<div class="dropdown-column"><a href="fusion-cafe.html" class="submenu-active"><div class="dropdown-icon">☕</div><h4>Fusion Cafe</h4><p>Pizza • Chinese • Cafe</p></a></div>
+<div class="dropdown-column">
+<a href="fusion-cafe.html" class="submenu-active">
+<div class="dropdown-icon">☕</div>
+<h4>Fusion Cafe</h4>
+<p>Pizza • Chinese • Cafe</p>
+</a>
+</div>
 </div>
 </li>
 <li><a href="games-zone.html">Games Zone</a></li>
+<li><a href="index.html#facilities">Facilities</a></li>
 <li><a href="gallery.html">Gallery</a></li>
+<li><a href="excursion.html">Excursion</a></li>
 <li><a href="index.html#contact">Contact</a></li>
 </ul>
 </nav>
-
-<a href="index.html#contact" class="contact-btn">Contact Now</a>
 </div>
 </header>
 
@@ -119,13 +133,51 @@
 </section>
 
 <footer>
-<div class="container footer-grid">
-<div class="footer-about"><div class="footer-logo"><img src="assets/images/logo-white.png" alt="The Urmi"></div><p>Comfortable stays, authentic dining and heartfelt hospitality at The Urmi, Haridwar.</p></div>
-<div><h3>Quick Links</h3><ul><li><a href="index.html">Home</a></li><li><a href="index.html#about">About</a></li><li><a href="index.html#rooms">Rooms</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="index.html#contact">Contact</a></li></ul></div>
-<div><h3>Dining</h3><ul><li><a href="naivedyam.html">Naivedyam</a></li><li><a href="fusion-cafe.html">Fusion Cafe</a></li><li><a href="games-zone.html">Games Zone</a></li></ul></div>
-<div><h3>Contact</h3><ul class="contact-list"><li>📍 Near Shantikunj, Rishikesh Road, Haridwar</li><li>📞 +91-XXXXXXXXXX</li><li>✉ aswani@theurmi.com</li><li>🌐 www.theurmi.com</li></ul></div>
+<div class="container">
+<div class="footer-grid">
+
+<div class="footer-about">
+<div class="footer-logo">
+<img src="assets/images/logo-white.png" alt="The Urmi">
 </div>
-<div class="footer-bottom"><p>© 2026 The Urmi Haridwar. All Rights Reserved.</p></div>
+<p>Comfortable stays, authentic dining and heartfelt hospitality at The Urmi, Haridwar.</p>
+</div>
+
+<div>
+<h3 class="footer-title">Quick Links</h3>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="excursion.html">Excursion</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+</div>
+
+<div>
+<h3 class="footer-title">Dining & Fun</h3>
+<ul class="footer-links">
+<li><a href="naivedyam.html">Naivedyam</a></li>
+<li><a href="fusion-cafe.html">Fusion Cafe</a></li>
+<li><a href="games-zone.html">Games Zone</a></li>
+</ul>
+</div>
+
+<div>
+<h3 class="footer-title">Contact</h3>
+<ul class="footer-contact">
+<li>📍 Near Shantikunj, Rishikesh Road, Haridwar</li>
+<li>✉ aswani@theurmi.com</li>
+<li>🌐 www.theurmi.com</li>
+</ul>
+</div>
+
+</div>
+<div class="footer-bottom">
+<p>© 2026 The Urmi Haridwar. All Rights Reserved.</p>
+</div>
+</div>
 </footer>
 
 <script>
