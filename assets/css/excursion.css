@@ -1,0 +1,582 @@
+/*=========================================================
+        THE URMI
+        EXCURSION PAGE
+        excursion.css
+=========================================================*/
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:"Poppins",sans-serif;
+    color:#333;
+    background:#fff;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section{
+    padding:95px 0;
+}
+
+.section.cream{
+    background:#faf8f5;
+}
+
+/*=========================================================
+        HERO
+=========================================================*/
+
+.excursion-hero{
+    position:relative;
+    min-height:560px;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+
+.excursion-hero > img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.excursion-hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        rgba(20,20,20,.70),
+        rgba(20,20,20,.28),
+        rgba(20,20,20,.08)
+    );
+}
+
+.excursion-hero .container{
+    position:relative;
+    z-index:2;
+}
+
+.excursion-hero-content{
+    max-width:720px;
+    padding:110px 0 45px;
+    color:#fff;
+}
+
+.excursion-hero-content > span{
+    display:inline-block;
+    margin-bottom:14px;
+    color:#f0d9b5;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.excursion-hero-content h1{
+    margin:0 0 18px;
+    color:#fff;
+    font-size:clamp(44px,6vw,70px);
+    line-height:1.05;
+    font-weight:600;
+}
+
+.excursion-hero-content p{
+    max-width:650px;
+    margin:0 0 28px;
+    color:rgba(255,255,255,.93);
+    font-size:17px;
+    line-height:1.85;
+}
+
+.excursion-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:13px 25px;
+    border-radius:30px;
+    background:#8B6B3F;
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s ease;
+}
+
+.excursion-btn:hover{
+    background:#735630;
+    transform:translateY(-2px);
+}
+
+/*=========================================================
+        SECTION TITLE
+=========================================================*/
+
+.section-title{
+    max-width:760px;
+    margin:0 auto 52px;
+    text-align:center;
+}
+
+.section-title > span{
+    display:inline-block;
+    margin-bottom:12px;
+    color:#8B6B3F;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-title h2{
+    margin:0 0 16px;
+    color:#222;
+    font-size:38px;
+    line-height:1.2;
+}
+
+.section-title p{
+    margin:0;
+    color:#777;
+    font-size:15px;
+    line-height:1.8;
+}
+
+/*=========================================================
+        EXCURSION CARDS
+=========================================================*/
+
+.excursion-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:28px;
+}
+
+.excursion-card{
+    overflow:hidden;
+    background:#fff;
+    border:1px solid #eee8e0;
+    border-radius:18px;
+    box-shadow:0 12px 35px rgba(0,0,0,.07);
+    transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.excursion-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 42px rgba(0,0,0,.11);
+}
+
+.excursion-image{
+    height:250px;
+    overflow:hidden;
+}
+
+.excursion-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .5s ease;
+}
+
+.excursion-card:hover .excursion-image img{
+    transform:scale(1.04);
+}
+
+.excursion-content{
+    padding:26px;
+}
+
+.excursion-distance{
+    display:inline-block;
+    margin-bottom:9px;
+    color:#8B6B3F;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+}
+
+.excursion-content h3{
+    margin:0 0 10px;
+    color:#222;
+    font-size:24px;
+}
+
+.excursion-content p{
+    margin:0;
+    color:#707070;
+    font-size:14px;
+    line-height:1.8;
+}
+
+/*=========================================================
+        EXPERIENCE TYPES
+=========================================================*/
+
+.experience-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.experience-card{
+    padding:30px 24px;
+    text-align:center;
+    background:#fff;
+    border:1px solid #ece7df;
+    border-radius:16px;
+}
+
+.experience-icon{
+    margin-bottom:13px;
+    font-size:30px;
+}
+
+.experience-card h3{
+    margin:0 0 8px;
+    color:#222;
+    font-size:20px;
+}
+
+.experience-card p{
+    margin:0;
+    color:#777;
+    font-size:13px;
+    line-height:1.7;
+}
+
+/*=========================================================
+        HARIDWAR + RISHIKESH
+=========================================================*/
+
+.journey-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.journey-image{
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.journey-image img{
+    width:100%;
+    height:460px;
+    object-fit:cover;
+}
+
+.journey-content > span{
+    display:inline-block;
+    margin-bottom:12px;
+    color:#8B6B3F;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.journey-content h2{
+    margin:0 0 18px;
+    color:#222;
+    font-size:38px;
+    line-height:1.2;
+}
+
+.journey-content p{
+    margin:0 0 16px;
+    color:#707070;
+    font-size:15px;
+    line-height:1.9;
+}
+
+.journey-list{
+    margin:24px 0 0;
+    padding:0;
+    list-style:none;
+}
+
+.journey-list li{
+    margin-bottom:11px;
+    color:#555;
+    font-size:14px;
+}
+
+/*=========================================================
+        CTA
+=========================================================*/
+
+.excursion-cta{
+    padding:90px 20px;
+    text-align:center;
+    background:#8B6B3F;
+    color:#fff;
+}
+
+.excursion-cta > span{
+    display:inline-block;
+    margin-bottom:12px;
+    color:#f0d9b5;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.excursion-cta h2{
+    margin:0 0 14px;
+    color:#fff;
+    font-size:38px;
+}
+
+.excursion-cta p{
+    max-width:680px;
+    margin:0 auto 28px;
+    color:rgba(255,255,255,.9);
+    line-height:1.8;
+}
+
+.excursion-cta a{
+    display:inline-flex;
+    padding:13px 25px;
+    border-radius:30px;
+    background:#fff;
+    color:#735630;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s ease;
+}
+
+.excursion-cta a:hover{
+    transform:translateY(-2px);
+}
+
+/*=========================================================
+        RESPONSIVE
+=========================================================*/
+
+@media(max-width:1000px){
+
+    .excursion-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .experience-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .journey-grid{
+        grid-template-columns:1fr;
+    }
+
+    .journey-image{
+        order:2;
+    }
+
+    .journey-content{
+        order:1;
+    }
+}
+
+@media(max-width:600px){
+
+    .section{
+        padding:65px 0;
+    }
+
+    .excursion-hero{
+        min-height:500px;
+    }
+
+    .excursion-hero-content{
+        padding:105px 0 35px;
+    }
+
+    .excursion-hero-content h1{
+        font-size:39px;
+    }
+
+    .excursion-hero-content p{
+        font-size:15px;
+    }
+
+    .section-title{
+        margin-bottom:35px;
+    }
+
+    .section-title h2,
+    .journey-content h2,
+    .excursion-cta h2{
+        font-size:30px;
+    }
+
+    .excursion-grid,
+    .experience-grid{
+        grid-template-columns:1fr;
+    }
+
+    .excursion-image{
+        height:240px;
+    }
+
+    .journey-image img{
+        height:320px;
+    }
+}
+
+
+/*=========================================================
+        CHARDHAM YATRA
+=========================================================*/
+
+.chardham-section{
+    padding:95px 0;
+    background:#f4f1eb;
+}
+
+.chardham-content{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    align-items:center;
+    gap:60px;
+}
+
+.chardham-copy > span{
+    display:inline-block;
+    margin-bottom:12px;
+    color:#8B6B3F;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.chardham-copy h2{
+    margin:0 0 18px;
+    color:#222;
+    font-size:40px;
+    line-height:1.2;
+}
+
+.chardham-copy > p{
+    margin:0 0 24px;
+    color:#707070;
+    font-size:15px;
+    line-height:1.9;
+}
+
+.chardham-dhams{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin:25px 0;
+}
+
+.chardham-dhams > div{
+    padding:16px 18px;
+    background:#fff;
+    border:1px solid #ece7df;
+    border-radius:12px;
+}
+
+.chardham-dhams strong{
+    display:block;
+    margin-bottom:3px;
+    color:#222;
+    font-size:15px;
+}
+
+.chardham-dhams span{
+    color:#777;
+    font-size:11px;
+}
+
+.chardham-list{
+    margin-bottom:25px;
+}
+
+.chardham-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:13px 24px;
+    border-radius:30px;
+    background:#8B6B3F;
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s ease;
+}
+
+.chardham-btn:hover{
+    background:#735630;
+    transform:translateY(-2px);
+}
+
+.chardham-image{
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.chardham-image img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+}
+
+/*=========================================================
+        CHARDHAM RESPONSIVE
+=========================================================*/
+
+@media(max-width:1000px){
+
+    .chardham-content{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .chardham-image{
+        order:2;
+    }
+
+    .chardham-copy{
+        order:1;
+    }
+}
+
+@media(max-width:600px){
+
+    .chardham-section{
+        padding:65px 0;
+    }
+
+    .chardham-copy h2{
+        font-size:30px;
+    }
+
+    .chardham-dhams{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .chardham-dhams > div{
+        padding:14px;
+    }
+
+    .chardham-image img{
+        height:320px;
+    }
+}

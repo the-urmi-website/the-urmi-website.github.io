@@ -15,8 +15,7 @@ body{
     color:#222222;
 }
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 /*=========================================================
 RESET
@@ -33,7 +32,7 @@ html{
 }
 
 body{
-    font-family:'Poppins',sans-serif;
+    font-family:"Poppins",sans-serif;
     background:#ffffff;
     color:#444;
     line-height:1.8;
@@ -75,92 +74,6 @@ CONTAINER
 width:90%;
 max-width:1200px;
 margin:auto;
-
-}
-
-/*=========================================================
-HEADER
-=========================================================*/
-
-header{
-
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:90px;
-
-display:flex;
-align-items:center;
-
-background:rgba(255,255,255,.96);
-
-backdrop-filter:blur(12px);
-
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-
-z-index:9999;
-
-}
-
-header .container{
-
-display:flex;
-align-items:center;
-justify-content:space-between;
-
-}
-
-.logo img{
-
-height:60px;
-width:auto;
-
-}
-
-nav ul{
-
-display:flex;
-gap:38px;
-list-style:none;
-
-}
-
-nav a{
-
-font-size:15px;
-font-weight:500;
-color:#333;
-transition:.3s;
-
-}
-
-nav a:hover,
-nav a.active{
-
-color:var(--primary);
-
-}
-
-.book-btn{
-
-padding:14px 30px;
-
-background:var(--primary);
-
-color:#fff;
-
-border-radius:40px;
-
-font-weight:600;
-
-transition:.35s;
-
-}
-
-.book-btn:hover{
-
-background:var(--primary-dark);
 
 }
 
@@ -387,12 +300,6 @@ RESPONSIVE
 =========================================================*/
 
 @media(max-width:992px){
-
-nav{
-
-display:none;
-
-}
 
 .restaurant-hero{
 
@@ -992,122 +899,6 @@ transform:translateY(-4px);
 }
 
 /*=========================================================
-                FOOTER
-=========================================================*/
-
-footer{
-
-background:#1f1f1f;
-
-padding:80px 0 30px;
-
-color:#d6d6d6;
-
-}
-
-.footer-grid{
-
-display:grid;
-
-grid-template-columns:2fr 1fr 1fr 1.2fr;
-
-gap:45px;
-
-margin-bottom:50px;
-
-}
-
-.footer-logo img{
-
-width:180px;
-
-height:auto;
-
-margin-bottom:25px;
-
-}
-
-.footer-title{
-
-color:#fff;
-
-font-size:22px;
-
-margin-bottom:22px;
-
-}
-
-.footer-links{
-
-list-style:none;
-
-padding:0;
-
-}
-
-.footer-links li{
-
-margin-bottom:14px;
-
-}
-
-.footer-links a{
-
-color:#cfcfcf;
-
-transition:.3s;
-
-}
-
-.footer-links a:hover{
-
-color:#fff;
-
-padding-left:6px;
-
-}
-
-.footer-contact{
-
-list-style:none;
-
-padding:0;
-
-}
-
-.footer-contact li{
-
-margin-bottom:16px;
-
-color:#cfcfcf;
-
-}
-
-.footer-about p{
-
-color:#cfcfcf;
-
-}
-
-.footer-bottom{
-
-border-top:1px solid rgba(255,255,255,.08);
-
-padding-top:25px;
-
-text-align:center;
-
-}
-
-.footer-bottom p{
-
-color:#aaaaaa;
-
-font-size:15px;
-
-}
-
-/*=========================================================
                 PAGE ANIMATIONS
 =========================================================*/
 
@@ -1147,12 +938,6 @@ transform:translateY(0);
 
 @media(max-width:1100px){
 
-.footer-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
 }
 
 @media(max-width:992px){
@@ -1178,20 +963,6 @@ font-size:38px;
 }
 
 @media(max-width:768px){
-
-footer{
-
-padding:60px 0 25px;
-
-}
-
-.footer-grid{
-
-grid-template-columns:1fr;
-
-gap:35px;
-
-}
 
 .gallery-item img{
 
@@ -1261,51 +1032,8 @@ font-size:30px;
 
 }
 /*=========================================================
-        NAVIGATION HOVER UNDERLINE
-=========================================================*/
-
-nav ul li a {
-    position: relative;
-}
-
-nav ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 0;
-    height: 2px;
-    background: #8B6B3F;
-    transition: width 0.3s ease;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
-
-nav ul li a.active::after {
-    width: 100%;
-}
-/*=========================================================
     MOBILE MENU
 =========================================================*/
-
-.menu-toggle{
-    display:none;
-
-    border:none;
-    background:none;
-
-    font-size:30px;
-    line-height:1;
-
-    color:var(--primary);
-
-    cursor:pointer;
-
-    padding:5px;
-}
-
 
 /*=========================================================
     MOBILE NAVIGATION
@@ -1313,117 +1041,41 @@ nav ul li a.active::after {
 
 @media(max-width:768px){
 
-    header{
-        height:75px;
-    }
+    
 
-    header .container{
-        height:75px;
-    }
+    
 
-    .logo img{
-        height:55px;
-    }
+    
 
-    .menu-toggle{
-        display:block;
-    }
+    
 
-    nav{
-        display:none;
+    
 
-        position:absolute;
+    
 
-        top:75px;
-        left:0;
+    
 
-        width:100%;
+    
 
-        background:#ffffff;
+    
 
-        box-shadow:0 15px 30px rgba(0,0,0,.10);
-
-        padding:15px 0;
-    }
-
-header nav.mobile-open{
-    display:block !important;
-}
-
-    nav ul{
-        display:flex;
-
-        flex-direction:column;
-
-        gap:0;
-
-        width:100%;
-    }
-
-    nav ul li{
-        width:100%;
-    }
-
-    nav ul li a{
-        display:block;
-
-        width:100%;
-
-        padding:14px 25px;
-
-        font-size:16px;
-    }
-
-    nav ul li a::after{
-        display:none;
-    }
-
-    nav ul li a:hover{
-        background:#faf6ef;
-
-        color:var(--primary);
-    }
-
-    .book-btn{
-        display:none;
-    }
-
+    
 
     /*-----------------------------------------
         MOBILE DINING DROPDOWN
     -----------------------------------------*/
 
-    .dropdown-menu{
-        position:static;
+    
 
-        transform:none;
+    
 
-        width:100%;
+    
 
-        display:none;
+    
 
-        opacity:1;
-        visibility:visible;
+    
 
-        box-shadow:none;
-
-        border-radius:0;
-
-        padding:0 15px;
-
-        background:#faf8f5;
-    }
-
-    .dropdown:hover .dropdown-menu{
-        display:none;
-    }
-
-    .dropdown.mobile-open .dropdown-menu{
-        display:flex;
-    }
-
-    .dropdown-menu .dropdown-column a{
-        padding:14px 15px;
-    }
+    
 
 }
+/* Keep the expanded desktop navigation comfortable before mobile breakpoint */

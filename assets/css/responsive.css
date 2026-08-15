@@ -35,7 +35,6 @@ h1{
 
 }
 
-
 /*=========================================================
   DESKTOP
 =========================================================*/
@@ -66,10 +65,6 @@ h1{
     grid-template-columns:repeat(2,1fr);
 }
 
-.footer-grid{
-    grid-template-columns:repeat(2,1fr);
-}
-
 .about-wrapper,
 .restaurant-wrapper,
 .contact-wrapper{
@@ -88,42 +83,11 @@ order:-1;
 
 }
 
-
 /*=========================================================
   TABLET
 =========================================================*/
 
 @media screen and (max-width:992px){
-
-header .container{
-
-height:78px;
-
-}
-
-.logo img{
-
-height:48px;
-
-}
-
-nav ul{
-
-gap:18px;
-
-}
-
-nav a{
-
-font-size:14px;
-
-}
-
-.book-btn{
-
-padding:11px 22px;
-
-}
 
 .hero{
 
@@ -165,36 +129,11 @@ height:280px;
 
 }
 
-
 /*=========================================================
   MOBILE
 =========================================================*/
 
 @media screen and (max-width:768px){
-
-header{
-
-padding:0;
-
-}
-
-header .container{
-
-height:70px;
-
-}
-
-nav{
-
-display:none;
-
-}
-
-.book-btn{
-
-display:none;
-
-}
 
 .hero{
 
@@ -275,24 +214,6 @@ height:240px;
 
 }
 
-.footer-grid{
-
-gap:35px;
-
-}
-
-.footer{
-
-text-align:center;
-
-}
-
-.footer-social{
-
-justify-content:center;
-
-}
-
 .page-banner{
 
 height:240px;
@@ -310,7 +231,6 @@ align-items:center;
 }
 
 }
-
 
 /*=========================================================
   SMALL MOBILE
@@ -375,18 +295,6 @@ margin:auto;
 
 }
 
-.footer{
-
-padding:60px 0 25px;
-
-}
-
-.footer-title{
-
-font-size:20px;
-
-}
-
 .page-banner{
 
 height:210px;
@@ -394,7 +302,6 @@ height:210px;
 }
 
 }
-
 
 /*=========================================================
   EXTRA SMALL DEVICES
@@ -480,7 +387,6 @@ padding:18px;
 
 }
 
-
 /*=========================================================
   LANDSCAPE PHONES
 =========================================================*/
@@ -509,21 +415,11 @@ margin-bottom:20px;
 
 }
 
-
 /*=========================================================
   PRINT
 =========================================================*/
 
 @media print{
-
-header,
-footer,
-.hero-btn,
-.book-btn{
-
-display:none;
-
-}
 
 body{
 

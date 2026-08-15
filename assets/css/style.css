@@ -16,8 +16,7 @@ body{
     color:#222222;
 }
 /* ---------- GOOGLE FONT ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 /* ---------- RESET ---------- */
 
@@ -32,7 +31,7 @@ html{
 }
 
 body{
-    font-family:'Poppins',sans-serif;
+    font-family:"Poppins",sans-serif;
     background:#faf8f5;
     color:#333;
     line-height:1.7;
@@ -120,336 +119,12 @@ color:var(--text);
 
 /* ---------- HEADER ---------- */
 
-header{
-
-height:88px;
-
-background:#ffffff;
-
-display:flex;
-
-align-items:center;
-
-box-shadow:0 2px 15px rgba(0,0,0,.08);
-
-position:fixed;
-
-width:100%;
-
-top:0;
-
-left:0;
-
-z-index:999;
-
-}
-
-header .container{
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-height:85px;
-
-}
-
 /* ---------- LOGO ---------- */
-
-.logo img{
-
-height:62px;
-
-width:auto;
-
-display:block;
-
-}
 
 /* ---------- NAVIGATION ---------- */
 
-nav ul{
-
-display:flex;
-
-gap:42px;
-
-}
-
-nav a{
-
-font-size:15px;
-
-font-weight:500;
-
-transition:.3s;
-
-position:relative;
-
-}
-
-nav a:hover{
-
-color:var(--primary);
-
-}
-
-nav a::after{
-
-content:"";
-
-position:absolute;
-
-left:0;
-
-bottom:-6px;
-
-width:0;
-
-height:2px;
-
-background:var(--primary);
-
-transition:.3s;
-
-}
-
-nav a:hover::after{
-
-width:100%;
-
-}
-
 /* ---------- BOOK BUTTON ---------- */
 
-.book-btn{
-
-background:var(--primary);
-
-color:white;
-
-padding:13px 28px;
-
-border-radius:40px;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-.book-btn:hover{
-
-background:#75562e;
-
-transform:translateY(-2px);
-
-}
-
-.dropdown{
-    position:relative;
-}
-
-.dropdown-menu{
-    position:absolute;
-    top:100%;
-    left:50%;
-    transform:translateX(-50%);
-    min-width:260px;
-    background:#fff;
-    border-radius:16px;
-    padding:12px 0;
-    box-shadow:0 20px 45px rgba(0,0,0,.15);
-    opacity:0;
-    visibility:hidden;
-    transition:.3s;
-    z-index:999;
-}
-
-.dropdown:hover .dropdown-menu{
-    opacity:1;
-    visibility:visible;
-    top:115%;
-}
-
-.dropdown-menu li{
-    list-style:none;
-}
-
-.dropdown-menu a{
-    display:block;
-    padding:14px 22px;
-    color:#333;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.dropdown-menu a:hover{
-    background:#f8f5ef;
-    color:#8B6B3F;
-}
-
-.dropdown-menu strong{
-    display:block;
-    font-size:16px;
-}
-
-.dropdown-menu span{
-    font-size:13px;
-    color:#777;
-}
-
-/*====================================
-        DINING DROPDOWN
-====================================*/
-
-.dropdown{
-
-position:relative;
-
-}
-
-.dropdown>a{
-
-display:flex;
-
-align-items:center;
-
-gap:6px;
-
-}
-
-.arrow{
-
-font-size:12px;
-
-transition:.3s;
-
-}
-
-.dropdown:hover .arrow{
-
-transform:rotate(180deg);
-
-}
-
-.dropdown-menu{
-
-position:absolute;
-
-top:120%;
-
-left:50%;
-
-transform:translateX(-50%);
-
-width:440px;
-
-background:#fff;
-
-border-radius:18px;
-
-display:flex;
-
-align-items:stretch;
-
-justify-content:space-between;
-
-padding:18px;
-
-box-shadow:0 20px 50px rgba(0,0,0,.15);
-
-opacity:0;
-
-visibility:hidden;
-
-transition:.3s;
-
-z-index:999;
-
-}
-
-.dropdown:hover .dropdown-menu{
-
-opacity:1;
-
-visibility:visible;
-
-top:110%;
-
-}
-
-.dropdown-column{
-
-flex:1;
-
-border-radius:14px;
-
-transition:.3s;
-
-}
-
-.dropdown-column:hover{
-
-background:#faf6ef;
-
-}
-
-.dropdown-column a{
-
-display:block;
-
-padding:18px;
-
-text-decoration:none;
-
-color:#333;
-
-}
-
-.dropdown-icon{
-
-font-size:30px;
-
-margin-bottom:12px;
-
-}
-
-.dropdown-column h4{
-
-font-size:24px;
-
-font-weight:700;
-
-margin-bottom:10px;
-
-color:#222;
-
-}
-
-.dropdown-column p{
-
-font-size:14px;
-
-line-height:1.7;
-
-color:#777;
-
-}
-
-.dropdown-divider{
-
-width:1px;
-
-background:#ececec;
-
-margin:0 12px;
-
-}
-
-/* ---------- HERO ---------- */
 /*=========================================================
     HERO SLIDER
 =========================================================*/
@@ -744,7 +419,6 @@ font-size:18px;
    Continue below Part 1
 =========================================================*/
 
-
 /*=========================================================
     SECTION TITLE
 =========================================================*/
@@ -775,7 +449,6 @@ margin-bottom:18px;
     max-width:700px;
     margin:auto;
 }
-
 
 /*=========================================================
     ROOMS
@@ -866,7 +539,6 @@ border-radius:22px;
     background:#73542d;
 }
 
-
 /*=========================================================
     ABOUT SHORT
 =========================================================*/
@@ -918,7 +590,6 @@ color:var(--primary);
 font-weight:700;
 
 }
-
 
 /*=========================================================
     DINING
@@ -1154,7 +825,6 @@ padding:0 15px;
 
 }
 
-
 .dining-highlight-content span{
 
 display:inline-block;
@@ -1344,7 +1014,6 @@ margin-bottom:15px;
 
 }
 
-
 /*=========================================================
     WHY CHOOSE US
 =========================================================*/
@@ -1406,7 +1075,6 @@ min-width:55px;
 margin-bottom:12px;
 
 }
-
 
 /*=========================================================
     EXPERIENCE
@@ -1477,7 +1145,6 @@ padding:28px;
 margin-bottom:15px;
 
 }
-
 
 /*=========================================================
     GALLERY
@@ -1622,7 +1289,6 @@ opacity:1;
     font-size:14px;
 }
 
-
 /*=========================================================
     CTA
 =========================================================*/
@@ -1660,95 +1326,6 @@ opacity:1;
     color:#fff;
 }
 
-
-/*=========================================================
-    FOOTER
-=========================================================*/
-
-footer{
-    background:#1f1f1f;
-    color:#d6d6d6;
-    padding:80px 0 30px;
-}
-
-.footer-grid{
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr 1.2fr;
-    gap:45px;
-    margin-bottom:50px;
-}
-
-.footer-logo img{
-    width:180px;
-    margin-bottom:25px;
-}
-
-.footer-about p{
-    color:#c8c8c8;
-}
-
-.footer-title{
-    color:#fff;
-    margin-bottom:22px;
-    font-size:22px;
-}
-
-.footer-links li{
-    margin-bottom:14px;
-}
-
-.footer-links a{
-    color:#c8c8c8;
-    transition:.3s;
-}
-
-.footer-links a:hover{
-    color:#fff;
-    padding-left:6px;
-}
-
-.footer-contact li{
-    margin-bottom:16px;
-    color:#c8c8c8;
-}
-
-.footer-social {
-    display: flex;
-    gap: 12px;
-    margin-top: 20px;
-}
-
-.footer-social a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.08);
-    color: #ffffff;
-    font-size: 17px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.footer-social a:hover {
-    background: #8B6B3F;
-    color: #ffffff;
-    transform: translateY(-3px);
-}
-.footer-bottom{
-    border-top:1px solid rgba(255,255,255,.08);
-    padding-top:25px;
-    text-align:center;
-}
-
-.footer-bottom p{
-    color:#a5a5a5;
-    font-size:15px;
-}
-
-
 /*=========================================================
     BUTTONS
 =========================================================*/
@@ -1783,7 +1360,6 @@ footer{
     color:#fff;
 }
 
-
 /*=========================================================
     IMAGE EFFECTS
 =========================================================*/
@@ -1808,7 +1384,6 @@ footer{
     box-shadow:0 25px 60px rgba(0,0,0,.15);
 }
 
-
 /*=========================================================
     SPACING
 =========================================================*/
@@ -1826,7 +1401,6 @@ footer{
 .text-center{
     text-align:center;
 }
-
 
 /*=========================================================
     ANIMATIONS
@@ -1885,7 +1459,6 @@ footer{
 .float{
     animation:float 4s ease-in-out infinite;
 }
-
 
 /*=========================================================
     SCROLLBAR
@@ -2131,10 +1704,6 @@ footer{
     .facility-grid{
         grid-template-columns:repeat(2,1fr);
     }
-
-    .footer-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
 }
 
 @media(max-width:768px){
@@ -2147,13 +1716,9 @@ footer{
         font-size:32px;
     }
 
-    header .container{
-        height:75px;
-    }
+    
 
-    nav{
-        display:none;
-    }
+    
 
     .hero{
         margin-top:75px;
@@ -2173,9 +1738,6 @@ footer{
     .gallery-grid,
     .facility-grid,
     .testimonial-grid,
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
 
     section{
         padding:120px 0;
@@ -2204,13 +1766,7 @@ footer{
         font-size:16px;
     }
 
-    .book-btn,
-    .hero-btn,
-    .btn,
-    .btn-outline{
-        width:100%;
-        text-align:center;
-    }
+    
 
     .contact-form{
         padding:24px;
@@ -2229,142 +1785,45 @@ footer{
     MOBILE MENU
 =========================================================*/
 
-.menu-toggle{
-    display:none;
-
-    border:none;
-    background:none;
-
-    font-size:30px;
-    line-height:1;
-
-    color:var(--primary);
-
-    cursor:pointer;
-
-    padding:5px;
-}
-
-
 /*=========================================================
     MOBILE NAVIGATION
 =========================================================*/
 
 @media(max-width:768px){
 
-    header{
-        height:75px;
-    }
+    
 
-    header .container{
-        height:75px;
-    }
+    
 
-    .logo img{
-        height:55px;
-    }
+    
 
-    .menu-toggle{
-        display:block;
-    }
+    
 
-    nav{
-        display:none;
+    
 
-        position:absolute;
+    
 
-        top:75px;
-        left:0;
+    
 
-        width:100%;
+    
 
-        background:#ffffff;
+    
 
-        box-shadow:0 15px 30px rgba(0,0,0,.10);
+    
 
-        padding:15px 0;
-    }
-
-header nav.mobile-open{
-    display:block !important;
-
-    }
-
-    nav ul{
-        display:flex;
-
-        flex-direction:column;
-
-        gap:0;
-
-        width:100%;
-    }
-
-    nav ul li{
-        width:100%;
-    }
-
-    nav ul li a{
-        display:block;
-
-        width:100%;
-
-        padding:14px 25px;
-
-        font-size:16px;
-    }
-
-    nav ul li a::after{
-        display:none;
-    }
-
-    nav ul li a:hover{
-        background:#faf6ef;
-
-        color:var(--primary);
-    }
-
-    .book-btn{
-        display:none;
-    }
-
+    
 
     /*-----------------------------------------
         MOBILE DINING DROPDOWN
     -----------------------------------------*/
 
-    .dropdown-menu{
-        position:static;
+    
 
-        transform:none;
+    
 
-        width:100%;
+    
 
-        display:none;
-
-        opacity:1;
-        visibility:visible;
-
-        box-shadow:none;
-
-        border-radius:0;
-
-        padding:0 15px;
-
-        background:#faf8f5;
-    }
-
-    .dropdown:hover .dropdown-menu{
-        display:none;
-    }
-
-    .dropdown.mobile-open .dropdown-menu{
-        display:flex;
-    }
-
-    .dropdown-menu .dropdown-column a{
-        padding:14px 15px;
-    }
+    
 
 }
 /*=========================================================
@@ -2449,7 +1908,6 @@ header nav.mobile-open{
 
     transform:rotate(90deg);
 }
-
 
 /*=========================================================
     MOBILE LIGHTBOX
@@ -2566,7 +2024,6 @@ header nav.mobile-open{
 
     transform:rotate(90deg);
 }
-
 
 /*=========================================================
     MOBILE LIGHTBOX
