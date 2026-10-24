@@ -473,3 +473,21 @@ nav ul li a.active {
         font-size: 12px;
     }
 }
+
+
+/*=========================================================
+    DESKTOP DINING DROPDOWN HOVER GAP FIX
+    Keeps the existing visual spacing and leaves mobile rules unchanged.
+=========================================================*/
+
+@media (min-width: 769px) {
+    .dropdown::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        width: 440px;
+        height: 18px;
+    }
+}
